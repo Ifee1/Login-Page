@@ -1,13 +1,74 @@
-body {
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  /* font-size: 10px; 10 / 16 *100 = 62.5%. Percentage of user's browser font size setting */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  background-color: #e0aaff;
+  padding: 30px 60px;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+}
+
+.login-image {
+  background-color: #9d4edd;
+  align-content: center;
+}
+
+img {
+  width: 100%;
+}
+
+.login-details {
+  background-color: #e0aaff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 160px 80px 40px 80px;
+  font-size: 10px;
+}
+
+input {
+  padding: 20px 10px;
+  outline-color: #3c096c;
+  border-radius: 10px;
+  border: none;
+  height: 50px;
+}
+
+select {
+  color: rgb(132, 132, 110);
+  padding: 20px 10px;
+  border-radius: 10px;
+  border: none;
+
+  height: 40px;
+}
+
+.btn:link,
+.btn:visited,
+.btn {
+  padding: 20px 10px;
+  background-color: #e0aaff;
+  border: solid 2px white;
+  border-radius: 20px;
+  font-size: 30px;
+  transition: all 0.5s;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #240046;
+  color: white;
 }
